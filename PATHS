@@ -1,9 +1,11 @@
-CMP=cl
-LINK=link
+CMP=cl /D "_DEBUG"  /MTd /EHsc /ZI
+LINK=link /DEBUG:FULL /DYNAMICBASE "C:\Program Files (x86)\Typemock\Isolator++\bin\x64\IsolatorCore.lib" 
 MAKE=mingw32-make
 
 VS_INC="E:\Programmes\Microsoft Visual Studio 14.0\VC\include"
 WSDK_INC="C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt"
+WSDK_INC2="C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared"
+WSDK_INC3="C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um"
 MW_LIB="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\lib\x64"
 SDK_LIB="C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\um\x64"
 SDK_LIB2="C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\ucrt\x64"
@@ -17,4 +19,7 @@ TESTS_SRC_DIR=$(TESTS_DIR)\src
 TESTS_BIN_DIR=$(TESTS_DIR)\bin
 
 GTEST_INC=E:\Documents\Projects\googletest\googletest\include
-GTEST_LIB=E:\Documents\Projects\googletest\build\lib\Release
+GTEST_LIB=E:\Documents\Projects\googletest\build\lib\Debug
+
+TYPEMOCK_INC="C:\Program Files (x86)\Typemock\Isolator++\include\ForTests"
+TYPEMOCK_LIB="C:\Program Files (x86)\Typemock\Isolator++\bin\x64"

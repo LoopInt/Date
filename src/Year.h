@@ -9,6 +9,7 @@ public:
     ~Year();
 
     void setValue(int newValue);
+    bool isLeap();
     
 private:
     int value;
