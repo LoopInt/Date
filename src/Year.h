@@ -7,6 +7,8 @@ public:
     Year();
     Year(int newValue);
     ~Year();
+
+    void setValue(int newValue);
     
 private:
     int value;

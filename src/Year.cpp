@@ -16,3 +16,8 @@ Year::~Year()
 {
        
 }
+
+void Year::setValue(int newValue)
+{
+    this->value=newValue;
+}

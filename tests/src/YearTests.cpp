@@ -15,3 +15,10 @@ TEST(YearClass, valueConstructor)
     Year year(10);
     ASSERT_EQ(year.value,10);
 }
+
+TEST(YearClass, setValue)
+{
+    Year year;
+    year.setValue(10);
+    ASSERT_EQ(year.value,10);
+}
