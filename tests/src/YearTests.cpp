@@ -9,3 +9,9 @@ TEST(YearClass, emptyConstructor)
     Year year;
     ASSERT_EQ(year.value,0);
 }
+
+TEST(YearClass, valueConstructor)
+{
+    Year year(10);
+    ASSERT_EQ(year.value,10);
+}

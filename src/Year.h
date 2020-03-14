@@ -5,6 +5,7 @@ class Year
 {
 public:
     Year();
+    Year(int newValue);
     ~Year();
     
 private:
