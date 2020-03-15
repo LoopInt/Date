@@ -9,6 +9,7 @@ public:
     ~Year();
 
     void setValue(int newValue);
+    int getValue() const;
     bool isLeap();
     unsigned int getNbDays();
     

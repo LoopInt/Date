@@ -24,6 +24,13 @@ TEST(YearClass, setValue)
     ASSERT_EQ(year.value,10);
 }
 
+TEST(YearClass, getValue)
+{
+    Year year;
+    year.value = 2020;
+    ASSERT_EQ(year.getValue(),2020);
+}
+
 TEST(YearClass, isLeap)
 {
     Year year;

@@ -22,6 +22,11 @@ void Year::setValue(int newValue)
     this->value=newValue;
 }
 
+int Year::getValue() const
+{
+    return this->value;
+}
+
 bool Year::isLeap()
 {
     bool result = false;
