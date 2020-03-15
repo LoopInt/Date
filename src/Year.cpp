@@ -34,3 +34,15 @@ bool Year::isLeap()
 
     return result;
 }
+
+unsigned int Year::getNbDays()
+{
+    unsigned int nbDays = 365;
+
+    if(this->isLeap())
+    {
+        nbDays = 366;
+    }
+
+    return nbDays;
+}

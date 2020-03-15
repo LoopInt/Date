@@ -34,3 +34,17 @@ TEST(YearClass, isLeap)
     year.value=2013;
     ASSERT_EQ(year.isLeap(),false);
 }
+
+TEST(YearClass, getNbDays)
+{
+    Year year;
+    year.value=2020;
+    WHEN_CALLED(year.isLeap()).Return(true);
+    ASSERT_EQ(year.getNbDays(),366);
+    year.value=2008;
+    WHEN_CALLED(year.isLeap()).Return(true);
+    ASSERT_EQ(year.getNbDays(),366);
+    year.value=2013;
+    WHEN_CALLED(year.isLeap()).Return(false);
+    ASSERT_EQ(year.getNbDays(),365);
+}

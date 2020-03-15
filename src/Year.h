@@ -10,6 +10,7 @@ public:
 
     void setValue(int newValue);
     bool isLeap();
+    unsigned int getNbDays();
     
 private:
     int value;
