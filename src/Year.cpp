@@ -27,7 +27,7 @@ int Year::getValue() const
     return this->value;
 }
 
-bool Year::isLeap()
+bool Year::isLeap() const 
 {
     bool result = false;
 
@@ -40,7 +40,7 @@ bool Year::isLeap()
     return result;
 }
 
-unsigned int Year::getNbDays()
+unsigned int Year::getNbDays() const
 {
     unsigned int nbDays = 365;
 

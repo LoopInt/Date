@@ -10,8 +10,8 @@ public:
 
     void setValue(int newValue);
     int getValue() const;
-    bool isLeap();
-    unsigned int getNbDays();
+    bool isLeap() const;
+    unsigned int getNbDays() const;
     
 private:
     int value;
